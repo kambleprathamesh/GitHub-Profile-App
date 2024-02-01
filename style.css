@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+:root {
+  --bgcolor: #f6f8ff;
+  --bgcolor1: #fefefe;
+  --text-color: #4b6a9b;
+  --number-color: #2b3442;
+  --btn-color: #0079ff;
+  --lm-icon: brightness(100%);
+  --btn-text-color: #ffff;
+  --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+#wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--bgcolor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-information-container {
+  background-color: var(--text-color);
+}
+.headTab {
+  width: 52%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 30px;
+  color: var(--text-color);
+  font-weight: bolder;
+}
+.color-mode {
+  margin-top: 10px;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  align-items: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.color-mode :nth-child(2) {
+  height: 25px;
+  width: 25px;
+  font-size: 30px;
+}
+.user-search-form {
+  width: 52%;
+  height: 80px;
+  background-color: var(--bgcolor1);
+  border-radius: 0.9rem;
+  box-shadow: var(--lm-shadow);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user-search-form .input {
+  width: 80%;
+  height: 100%;
+  padding: 1rem;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.input img {
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+input {
+  all: unset;
+  width: 60%;
+  height: 90%;
+  font-size: 20px;
+  color: var(--text-color);
+  background-color: var(--bgcolor1);
+  padding-right: 12rem;
+  position: relative;
+
+  /* border:1px solid; */
+}
+/* #search{
+  background-color: var(--bgcolor1);
+} */
+.fa-xmark {
+  position: absolute;
+  top: 18px;
+  right: 7rem;
+  width: 60px;
+  line-height: 80%;
+  position: absolute;
+  text-align: center;
+  padding: 13px;
+  margin-right: 2rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+.fa-xmark:hover{
+  /* border: 1px solid; */
+  border-radius:100px;
+  background-color: rgba(132, 132, 132, 0.5);
+}
+#no-results {
+  width: 30%;
+  line-height: 45px;
+  font-size: 13px;
+  font-weight: bolder;
+  /* border: 1px solid; */
+  color: red;
+  margin-left: 5px;
+}
+input::placeholder {
+  font-size: 20px;
+
+  color: var(--text-color);
+  background-color: var(--bgcolor1);
+}
+button {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px var(--btn-color);
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.7;
+}
+.user-information-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bgcolor1);
+  width: 52%;
+  height: 60%;
+  border-radius: 0.9rem;
+  box-shadow: var(--lm-shadow);
+  margin-top: 25px;
+}
+.user-profile-photo {
+  height: 100%;
+  width: 40%;
+}
+.user-profile-photo img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.user-details {
+  width: 100%;
+  height: 100%;
+}
+.user-name-joined-detail {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 30px;
+}
+.user-name-joined-detail :nth-child(1) {
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--number-color);
+}
+.user-name-joined-detail :nth-child(2) {
+  font-size: 15px;
+  color: var(--text-color);
+}
+.user-githubid-bio {
+  width: 100%;
+  height: 100px;
+  font-size: 16px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.7rem; */
+}
+.user-githubid-bio a {
+  color: var(--btn-color);
+}
+.repo-follower-following {
+  width: 90%;
+  height: 22%;
+
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--bgcolor);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.repo-follower-following .repo1 {
+  font-size: 15px;
+  color: var(--text-color);
+}
+p[repo] {
+  font-size: 26px;
+  font-weight: bolder;
+  color: var(--number-color);
+}
+.personal-data {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.child1 {
+  margin-top: 30px;
+}
+.personal-data a,
+p {
+  color: var(--text-color);
+}
+.flex {
+  display: flex;
+  gap: 15px;
+}
+.icon {
+  filter: var(--lm-icon);
+}
